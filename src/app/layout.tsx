@@ -10,7 +10,7 @@ export default function RootLayout({ children }:Readonly<{ children: React.React
 
   return (
     <html lang="en">
-      <body>
+      <body className="bg-skybox bg-cover bg-no-repeat min-h-screen">
         {children}
       </body>
     </html>
