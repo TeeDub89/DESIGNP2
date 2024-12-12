@@ -6,9 +6,10 @@ import { useEffect, useRef, useState } from 'react';
 interface BackgroundProps {
   onReachBottom: () => void;
   onScrollUp: () => void;
+  onShowAbout: () => void;
 }
 
-export function Background({ onReachBottom, onScrollUp }: BackgroundProps) {
+export function Background({ onReachBottom, onScrollUp, onShowAbout }: BackgroundProps) {
   const parallaxRef = useRef<Parallax>(null);
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
@@ -40,8 +41,15 @@ export function Background({ onReachBottom, onScrollUp }: BackgroundProps) {
 
   return (
     <Parallax ref={parallaxRef} pages={2.5}>
+      <ParallaxLayer offset={0} speed={0}>
+        <div className="absolute top-0 left-0 w-full text-center p-4 bg-gray-800 text-white">
+          Click the moon or scroll down
+        </div>
+      </ParallaxLayer>
       <ParallaxLayer offset={0.2} speed={0.1}>
-        <Image src="/images/moon.png" alt="moon" width={250} height={250} />
+        <div onClick={onShowAbout} className="cursor-pointer">
+          <Image src="/images/moon.png" alt="moon" width={250} height={250} />
+        </div>
       </ParallaxLayer>
       <ParallaxLayer offset={1.1} speed={0.15}>
         <Image src="/images/-5.png" alt="cloud1" layout="responsive" width={100} height={50} />
