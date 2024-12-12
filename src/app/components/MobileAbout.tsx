@@ -54,11 +54,11 @@ const AboutMobile: React.FC = () => {
       </div>
       
       <div className="flex flex-col items-center space-y-5 mt-10">
-        <div className="w-full bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm flex justify-center items-center p-5">
-          <div className="text-white text-[18px] font-custom">View GitHub</div>
+        <div className="w-[300px] bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm flex justify-center items-center p-5">
+          <div className="text-white text-[28px] font-custom">View GitHub</div>
         </div>
-        <div className="w-full bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm flex justify-center items-center p-5">
-          <div className="text-white text-[18px] font-custom"><a href="/">Back to Home</a></div>
+        <div className="w-[300px] bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm flex justify-center items-center p-5">
+          <div className="text-white text-[28px] font-custom"><a href="/">Back to Home</a></div>
         </div>
       </div>
     </div>

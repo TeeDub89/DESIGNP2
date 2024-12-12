@@ -56,7 +56,7 @@ export function Background({ onReachBottom, onScrollUp, onShowAbout }: Backgroun
   return (
     <Parallax ref={parallaxRef} pages={2.5} className="h-screen">
       <ParallaxLayer offset={0} speed={0.1}>
-        <div className="absolute top-0 left-0 w-full text-center p-4 bg-gray-800 text-white">
+        <div className="absolute top-0 left-0 w-full text-center p-4 bg-gray-800 text-white text-[28px] font-custom">
           Click the moon to learn more about me, or scroll down to see my projects!
         </div>
       </ParallaxLayer>

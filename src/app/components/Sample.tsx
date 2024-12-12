@@ -37,7 +37,7 @@ const Sample: React.FC = () => {
         <div className="w-36 h-[40.5px] text-white text-[28px] font-custom">View GitHub</div>
       </div>
       <div className="w-[300px] h-[100px] right-[90px] top-[750px] absolute bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm justify-center items-center inline-flex">
-        <div className="w-[161.25px] h-[43.5px] text-white text-[28px] font-custom">Back to Home</div>
+        <div className="w-[161.25px] h-[43.5px] text-white text-[28px] font-custom"><a href='/'>Back to Home</a></div>
       </div>
       <div className="w-[300px] h-[100px] right-[410px] top-[750px] absolute bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm justify-center items-center inline-flex">
         <div className="w-[161.25px] h-[43.5px] text-white text-[28px] font-custom">About Me</div>
