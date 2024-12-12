@@ -1,12 +1,13 @@
+'use client';
 import React from 'react';
 
-const About: React.FC = () => {
+const AboutMobile: React.FC = () => {
   return (
-    <div className="w-full h-full relative bg-[#1A1A1A] text-white font-retro">
-      <div className="absolute left-0 top-0 w-3/4 h-full flex flex-col justify-start p-10 space-y-10">
-        <div className="flex-1">
-          <h2 className="text-white text-[28px] font-custom">About Me:</h2>
-          <p className="text-white text-[28px] font-custom">
+    <div className="w-full h-full relative bg-[#1A1A1A] text-white font-retro p-5">
+      <div className="flex flex-col space-y-5">
+        <div>
+          <h2 className="text-white text-[24px] font-custom">About Me:</h2>
+          <p className="text-white text-[18px] font-custom">
             Hi, I’m Tim! A web developer with a passion for crafting clean, efficient, and visually engaging digital experiences. 
             With a tech stack that spans both front-end and back-end technologies, I thrive on turning creative ideas into functional, 
             user-friendly web applications.
@@ -18,9 +19,9 @@ const About: React.FC = () => {
         </div>
         
         {/* Tech Stack */}
-        <div className="flex-1">
-          <h2 className="text-white text-[28px] font-custom">Tech Stack:</h2>
-          <p className="text-white text-[28px] font-custom">
+        <div>
+          <h2 className="text-white text-[24px] font-custom">Tech Stack:</h2>
+          <p className="text-white text-[18px] font-custom">
             Here are some of the tools and technologies I’ve leveled up with:
             <br />
             <strong>Frontend:</strong> HTML, CSS (SASS/SCSS), JavaScript (ES6+), React, TailwindCSS
@@ -32,9 +33,9 @@ const About: React.FC = () => {
         </div>
         
         {/* Work History */}
-        <div className="flex-1">
-          <h2 className="text-white text-[28px] font-custom">Work History:</h2>
-          <p className="text-white text-[28px] font-custom">
+        <div>
+          <h2 className="text-white text-[24px] font-custom">Work History:</h2>
+          <p className="text-white text-[18px] font-custom">
             <strong>[Most Recent Role]</strong> – Web Developer, [Company Name]
             <br />
             Developed responsive and accessible websites for clients across diverse industries.
@@ -52,19 +53,16 @@ const About: React.FC = () => {
         </div>
       </div>
       
-      <div className="absolute right-0 top-0 w-1/4 h-full flex flex-col items-center p-5 space-y-5">
-        
-        <div className="w-full flex-1 flex flex-col justify-end items-center space-y-5">
-          <div className="w-[300px] h-[100px] right-[90px] top-[625px] absolute bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm justify-center items-center inline-flex">
-            <div className="w-36 h-[40.5px] text-white text-[28px] font-custom">View GitHub</div>
-          </div>
-          <div className="w-[300px] h-[100px] right-[90px] top-[750px] absolute bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm justify-center items-center inline-flex">
-            <div className="w-[161.25px] h-[43.5px] text-white text-[28px] font-custom"><a href="/">Back to Home</a></div>
-          </div>
+      <div className="flex flex-col items-center space-y-5 mt-10">
+        <div className="w-full bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm flex justify-center items-center p-5">
+          <div className="text-white text-[18px] font-custom">View GitHub</div>
+        </div>
+        <div className="w-full bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm flex justify-center items-center p-5">
+          <div className="text-white text-[18px] font-custom"><a href="/">Back to Home</a></div>
         </div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default AboutMobile;

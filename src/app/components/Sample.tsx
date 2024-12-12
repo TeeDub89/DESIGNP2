@@ -22,11 +22,11 @@ const Sample: React.FC = () => {
       </div>
       <div className="w-[688.5px] h-[388.5px] px-5 py-[9.75px] right-[50px] top-[225px] absolute bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm justify-center items-center inline-flex">
         <div className="w-[646.5px] h-[369px] text-white text-[28px] font-custom">
-          Technologies Used:<br/>
-          ASP.NET Core: For building the web application and API.<br/><br/>
-          MySQL: For database management.<br/><br/>
-          jQuery: For client-side scripting and validation. <br/><br/>
-          Bootstrap: For responsive and modern UI design.<br/><br/>
+          Technologies Used:<br/><br/>
+          ASP.NET Core: For building the web application and API.<br/>
+          MySQL: For database management.<br/>
+          jQuery: For client-side scripting and validation. <br/>
+          Bootstrap: For responsive and modern UI design.<br/>
           Docker: For containerization and easy deployment.
         </div>
       </div>

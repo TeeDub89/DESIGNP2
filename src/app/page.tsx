@@ -1,12 +1,17 @@
 'use client';
 import React, { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { Background } from './components/Background';
 import Sample from './components/Sample';
 import About from './components/About';
+import { MobileBackground } from './components/MobileBackground';
+import AboutMobile from './components/MobileAbout';
 
 export default function Home() {
   const [showSample, setShowSample] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
+
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const handleReachBottom = () => {
     setShowSample(true);
@@ -24,12 +29,15 @@ export default function Home() {
     <div>
       {showAbout ? (
         <div className='bg-slate-900 bg-cover bg-no-repeat min-h-screen'>
-          <About />
-
+          {isMobile ? <AboutMobile /> : <About />}
         </div>
       ) : (
         <div className='bg-skybox bg-cover bg-no-repeat min-h-screen'>
-          <Background onReachBottom={handleReachBottom} onScrollUp={handleScrollUp} onShowAbout={handleShowAbout} />
+          {isMobile ? (
+            <MobileBackground />
+          ) : (
+            <Background onReachBottom={handleReachBottom} onScrollUp={handleScrollUp} onShowAbout={handleShowAbout} />
+          )}
           {showSample && <Sample />}
         </div>
       )}
