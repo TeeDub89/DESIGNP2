@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const About: React.FC = () => {
   return (
@@ -53,8 +54,10 @@ const About: React.FC = () => {
       </div>
       
       <div className="absolute right-0 top-0 w-1/4 h-full flex flex-col items-center p-5 space-y-5">
+        {/* Add photo above the buttons */}
+        <Image src="/images/me.jpg" alt="Profile Photo" layout="responsive" width={200} height={200} className="rounded-full object-cover" />
         
-        <div className="w-full flex-1 flex flex-col justify-end items-center space-y-5">
+        <div className="w-full flex-1 flex flex-col justify-end">
           <div className="w-[300px] h-[100px] right-[90px] top-[625px] absolute bg-[#808080]/60 shadow border-8 border-[#c8c8c8] backdrop-blur-sm justify-center items-center inline-flex">
             <div className="w-36 h-[40.5px] text-white text-[28px] font-custom">View GitHub</div>
           </div>
