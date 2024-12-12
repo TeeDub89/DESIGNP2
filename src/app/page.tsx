@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div>
       {showAbout ? (
-        <div className='bg-slate-900 bg-cover bg-no-repeat min-h-screen'>
+        <div className='bg-[#1A1A1A] bg-cover bg-no-repeat min-h-screen'>
           {isMobile ? <AboutMobile /> : <About />}
         </div>
       ) : (

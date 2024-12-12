@@ -3,7 +3,7 @@ import React from 'react';
 
 const AboutMobile: React.FC = () => {
   return (
-    <div className="w-full h-full relative bg-[#1A1A1A] text-white font-retro p-5">
+    <div className="w-full h-full relative bg-[#1A1A1A] text-white p-5">
       <div className="flex flex-col space-y-5">
         <div>
           <h2 className="text-white text-[24px] font-custom">About Me:</h2>

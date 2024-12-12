@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const About: React.FC = () => {
   return (
-    <div className="w-full h-full relative bg-[#1A1A1A] text-white font-retro">
+    <div className="w-full h-full relative bg-[#1A1A1A] text-white">
       <div className="absolute left-0 top-0 w-3/4 h-full flex flex-col justify-start p-10 space-y-10">
         <div className="flex-1">
           <h2 className="text-white text-[28px] font-custom">About Me:</h2>
