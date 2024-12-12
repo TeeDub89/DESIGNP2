@@ -11,6 +11,9 @@ const config: Config = {
       backgroundImage: {
         'skybox': "url('/images/-6.png')",
       },
+      fontFamily: {
+        custom: ['MyFont', 'sans-serif'],
+      },
     },
   },
   plugins: [],
