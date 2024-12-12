@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'skybox': "url('/images/-6.png')",
+      },
+      fontFamily: {
+        custom: ['MyFont', 'sans-serif'],
+      },
     },
   },
   plugins: [],
